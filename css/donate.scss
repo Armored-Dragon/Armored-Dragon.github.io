@@ -1,0 +1,59 @@
+$accent_color: #b74500;
+$accent_color_dark: #752c00;
+$body_color_transparent: #00000024;
+
+.middleground-picture {
+	width: 100%;
+	height: 35%;
+	height: 350px;
+
+	display: flex;
+	padding: 25px;
+	box-sizing: border-box;
+
+	.container {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		background: radial-gradient(at top left, #353535, #575757);
+		border-radius: 3px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		max-width: 100%;
+
+		.title {
+			margin: auto auto 5px;
+			font-size: 1.5em;
+			margin: 0 auto;
+			background-color: rgba(0, 0, 0, 0.25);
+			width: 100%;
+			text-align: center;
+		}
+		.description {
+			padding: 15px;
+			box-sizing: border-box;
+
+			.sub_description {
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			.currency {
+				font-size: 1.2em;
+				margin: 0 auto 30px auto;
+
+				.account {
+					font-size: 0.7em;
+					background-color: #000000b3;
+					border-radius: 1px;
+					padding: 3px 10px;
+					box-sizing: border-box;
+					overflow-x: auto;
+				}
+			}
+
+			.currency:last-of-type {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}

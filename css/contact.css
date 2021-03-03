@@ -1,0 +1,71 @@
+.middleground-picture {
+  width: 100%;
+  height: 35%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.middleground-picture .container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: radial-gradient(at top left, #353535, #575757);
+  width: 500px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.middleground-picture .container .title {
+  margin: auto auto 5px;
+  font-size: 1.5em;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  text-align: center;
+}
+
+.middleground-picture .container .stats {
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.middleground-picture .container .stats .contact {
+  margin-bottom: 5px;
+  text-align: initial;
+  width: 100%;
+}
+
+.middleground-picture .container .stats .contact .focus_background {
+  background-color: #b745005e;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 510px) {
+  .middleground-picture .container .stats .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .middleground-picture .container .stats .contact:last-of-type {
+    margin-bottom: 0px;
+  }
+}

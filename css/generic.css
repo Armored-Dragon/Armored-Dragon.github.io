@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Andika;
+  src: url(/fonts/Andika.ttf);
+}
+
+body {
+  background-color: #171717;
+  margin: 0;
+  font-family: Andika;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  color: #00dbff;
+}
+
+.head-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 60px;
+  background-color: #b74500;
+  padding: 0px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.head-banner .title {
+  margin: auto 5px auto 15px;
+  font-size: 1.5em;
+}
+
+.head-banner .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0px auto auto;
+  height: 100%;
+}
+
+.head-banner .menu a {
+  border: 1px solid #00000000;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+  height: 100%;
+  width: 90px;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #dbdbdb;
+}
+
+.head-banner .menu a span {
+  margin: auto;
+  line-height: 1px;
+}
+
+.head-banner .menu a:hover,
+.head-banner .menu a:focus {
+  color: white;
+  background-color: #752c00;
+}
+
+.head-banner .menu a.active {
+  color: white;
+  background-color: #622500;
+}
+
+.text {
+  color: white;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+  .head-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .head-banner .title {
+    font-size: 1.1em;
+  }
+  .head-banner .menu {
+    width: 100%;
+  }
+  .head-banner .menu a {
+    margin: auto 0;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
